@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo FlexBox</title>
     <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
         .container {
             background-color: #333;
-            /*display: flex;*/
-            display: inline-flex;
+            height: 30vh;
+
+            display: flex;
+            /*display: inline-flex;*/
+            flex-direction: row;
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: column;*/
+            /*flex-direction: column-reverse;*/
+            flex-wrap: wrap;
+            /*flex-wrap: nowrap;*/
         }
 
         .item {
             background-color: #666;
+            border: medium solid #999;
+            width: 20%;
         }
     </style>
 </head>
@@ -22,10 +38,33 @@
         <article class="item">Flex Item 2</article>
         <article class="item">Flex Item 3</article>
     </section>
+    <br><br>
     <section class="container">
         <article class="item">Flex Item 1</article>
         <article class="item">Flex Item 2</article>
         <article class="item">Flex Item 3</article>
+    </section>
+    <br><br>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+        <article class="item">Flex Item 4</article>
+        <article class="item">Flex Item 5</article>
+        <article class="item">Flex Item 6</article>
+        <article class="item">Flex Item 7</article>
+        <article class="item">Flex Item 8</article>
+        <article class="item">Flex Item 9</article>
+        <article class="item">Flex Item 10</article>
+        <article class="item">Flex Item 11</article>
+        <article class="item">Flex Item 12</article>
+        <article class="item">Flex Item 13</article>
+        <article class="item">Flex Item 14</article>
+        <article class="item">Flex Item 15</article>
+        <article class="item">Flex Item 16</article>
+        <article class="item">Flex Item 17</article>
+        <article class="item">Flex Item 18</article>
+        <article class="item">Flex Item 19</article>
     </section>
 </body>
 </html>
