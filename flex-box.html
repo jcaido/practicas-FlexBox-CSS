@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo FlexBox</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #333;
+            height: 30vh;
+
+            display: flex;
+            /*display: inline-flex;*/
+
+            flex-direction: row;
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: column;*/
+            /*flex-direction: column-reverse;*/
+            /*flex-wrap: wrap;*/
+
+            flex-wrap: nowrap;
+
+            justify-content: flex-start;
+            /*justify-content: center;*/
+            /*justify-content: flex-end;*/
+            /*justify-content: space-between;*/
+            /*justify-content: space-around;*/
+            /*justify-content: space-evenly*/
+
+            align-items: stretch;
+            /*align-items: flex-start;*/
+            /*align-items: end;*/
+            /*align-items: center;*/
+            /*align-items: baseline;*/
+
+            align-content: flex-start;
+            /*align-content: flex-end;*/
+            /*align-content: center;*/
+            /*align-content: space-between;*/
+            /*align-content: space-around;*/
+            /*align-content: space-evenly;*/
+            /*align-content: stretch;*/
+        }
+
+        .item {
+            background-color: #666;
+            border: medium solid #999;
+            /*width: 20%;*/
+            /*height: 20%;*/
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+
+        .item:nth-child(2) {
+            flex-grow: 3;
+        }
+
+        .item:nth-child(3) {
+            flex-grow: 2;
+        }
+
+        /*.item:nth-child(2), .item:nth-child(17) {
+            font-size: 250%;
+        }*/
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <br><br>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+        <article class="item">Flex Item 4</article>
+        <article class="item">Flex Item 5</article>
+        <article class="item">Flex Item 6</article>
+        <article class="item">Flex Item 7</article>
+        <article class="item">Flex Item 8</article>
+        <article class="item">Flex Item 9</article>
+        <article class="item">Flex Item 10</article>
+        <article class="item">Flex Item 11</article>
+        <article class="item">Flex Item 12</article>
+        <article class="item">Flex Item 13</article>
+        <article class="item">Flex Item 14</article>
+        <article class="item">Flex Item 15</article>
+        <article class="item">Flex Item 16</article>
+        <article class="item">Flex Item 17</article>
+        <article class="item">Flex Item 18</article>
+        <article class="item">Flex Item 19</article>
+    </section>
+</body>
+</html>
