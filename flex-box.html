@@ -14,6 +14,7 @@
         .container {
             background-color: #333;
             height: 30vh;
+            width: 100%;
 
             display: flex;
             /*display: inline-flex;*/
@@ -53,18 +54,18 @@
             border: medium solid #999;
             /*width: 20%;*/
             /*height: 20%;*/
-            flex-grow: 1;
+            flex-grow: 0;
             flex-shrink: 1;
             flex-basis: auto;
         }
 
-        .item:nth-child(2) {
-            flex-grow: 3;
-        }
+        /*.item:nth-child(2) {
+            flex-grow: 1;
+        }*/
 
-        .item:nth-child(3) {
-            flex-grow: 2;
-        }
+        /*.item:nth-child(3) {
+            flex-grow: 1;
+        }*/
 
         /*.item:nth-child(2), .item:nth-child(17) {
             font-size: 250%;
