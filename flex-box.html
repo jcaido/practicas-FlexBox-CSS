@@ -58,15 +58,24 @@
             flex-shrink: 1;
             /*flex-basis: auto;*/
             flex-basis: 100px;
+            order: 0;
         }
 
-        /*.item:nth-child(2) {
-            flex-grow: 1;
-        }*/
+        .item:nth-child(2) {
+            /*flex-grow: 1;*/
+            /*order: 1;*/
+            order: -1;
+            
+        }
 
-        /*.item:nth-child(3) {
-            flex-grow: 1;
-        }*/
+        .item:nth-child(3) {
+            /*flex-grow: 1;*/
+            /*align-self: stretch;*/
+            align-self: flex-start;
+            /* align-self: flex-end;
+            align-self: center;
+            align-self: baseline; */
+        }
 
         /*.item:nth-child(2), .item:nth-child(17) {
             font-size: 250%;
@@ -78,6 +87,8 @@
         <article class="item">Flex Item 1</article>
         <article class="item">Flex Item 2</article>
         <article class="item">Flex Item 3</article>
+        <article class="item">Flex Item 4</article>
+        <article class="item">Flex Item 5</article>
     </section>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <section class="container">
